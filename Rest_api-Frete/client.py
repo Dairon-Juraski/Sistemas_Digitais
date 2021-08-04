@@ -39,7 +39,7 @@ def edit ():
 def delete ():
     index = input('Insert ID:')
     response = requests.delete(f'http://127.0.0.1:5000/freights/{index}')
-    return response.json()
+    return response
 
 
 if __name__ == "__main__":
